@@ -3,3 +3,4 @@ venv/
 *.vuerd.json
 __pycache__/
 docs/
+.DS_Store
