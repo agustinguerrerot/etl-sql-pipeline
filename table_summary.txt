@@ -1,0 +1,118 @@
+==================================================
+Schema for table: directors
+Column: movie_id, Type: INTEGER, Not NULL: 1, Primary Key: 0
+Column: person_id, Type: INTEGER, Not NULL: 1, Primary Key: 0
+--------------------------------------------------
+Number of rows: 478634
+Number of columns: 2
+Duplicate rows: 0
+Column-wise summary:
+  - movie_id:
+      Type: int64
+      Unique values: 433952
+      Missing values: 0
+      Sample values: [11801 13274 15414]
+  - person_id:
+      Type: int64
+      Unique values: 215417
+      Missing values: 0
+      Sample values: [681726 412842 895048]
+==================================================
+==================================================
+Schema for table: movies
+Column: id, Type: INTEGER, Not NULL: 0, Primary Key: 1
+Column: title, Type: TEXT, Not NULL: 1, Primary Key: 0
+Column: year, Type: NUMERIC, Not NULL: 0, Primary Key: 0
+--------------------------------------------------
+Number of rows: 459025
+Number of columns: 3
+Duplicate rows: 0
+Column-wise summary:
+  - id:
+      Type: int64
+      Unique values: 459025
+      Missing values: 0
+      Sample values: [11801 13274 15414]
+  - title:
+      Type: object
+      Unique values: 408797
+      Missing values: 0
+      Sample values: ['Tötet nicht mehr' 'Istoriya grazhdanskoy voyny' 'La tierra de los toros']
+  - year:
+      Type: int64
+      Unique values: 62
+      Missing values: 0
+      Sample values: [2019 2021 2000]
+==================================================
+==================================================
+Schema for table: people
+Column: id, Type: INTEGER, Not NULL: 0, Primary Key: 1
+Column: name, Type: TEXT, Not NULL: 1, Primary Key: 0
+Column: birth, Type: NUMERIC, Not NULL: 0, Primary Key: 0
+--------------------------------------------------
+Number of rows: 1900143
+Number of columns: 3
+Duplicate rows: 0
+Column-wise summary:
+  - id:
+      Type: int64
+      Unique values: 1900143
+      Missing values: 0
+      Sample values: [1 2 3]
+  - name:
+      Type: object
+      Unique values: 1746635
+      Missing values: 0
+      Sample values: ['Fred Astaire' 'Lauren Bacall' 'Brigitte Bardot']
+  - birth:
+      Type: float64
+      Unique values: 363
+      Missing values: 1635450
+      Sample values: [1899. 1924. 1934.]
+==================================================
+==================================================
+Schema for table: ratings
+Column: movie_id, Type: INTEGER, Not NULL: 1, Primary Key: 0
+Column: rating, Type: REAL, Not NULL: 1, Primary Key: 0
+Column: votes, Type: INTEGER, Not NULL: 1, Primary Key: 0
+--------------------------------------------------
+Number of rows: 257640
+Number of columns: 3
+Duplicate rows: 0
+Column-wise summary:
+  - movie_id:
+      Type: int64
+      Unique values: 257640
+      Missing values: 0
+      Sample values: [13274 15414 15724]
+  - rating:
+      Type: float64
+      Unique values: 91
+      Missing values: 0
+      Sample values: [6.7 5.4 6.3]
+  - votes:
+      Type: int64
+      Unique values: 17753
+      Missing values: 0
+      Sample values: [74 17 31]
+==================================================
+==================================================
+Schema for table: stars
+Column: movie_id, Type: INTEGER, Not NULL: 1, Primary Key: 0
+Column: person_id, Type: INTEGER, Not NULL: 1, Primary Key: 0
+--------------------------------------------------
+Number of rows: 2973186
+Number of columns: 2
+Duplicate rows: 56762
+Column-wise summary:
+  - movie_id:
+      Type: int64
+      Unique values: 386599
+      Missing values: 0
+      Sample values: [11801 15414 15724]
+  - person_id:
+      Type: int64
+      Unique values: 1228140
+      Missing values: 0
+      Sample values: [681726 692612 726256]
+==================================================

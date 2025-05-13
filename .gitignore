@@ -1,0 +1,5 @@
+venv/
+*.db
+*.vuerd.json
+__pycache__/
+docs/
